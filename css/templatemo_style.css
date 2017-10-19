@@ -14,31 +14,46 @@ html, body {
 }
 
 a {
-	color: #60C5BA;
+	color: #b2ccd3;
 	font-weight:bold;
 }
 
 a:hover {
-	text-decoration: line-through;
-	color: #60C5BA;
+	text-decoration: none;
+	color: #b2ccd3;
 }
 a:visited{
-	color: #60C5BA;
+	color: #b2ccd3;
 }
 
 p {
 	color: #777;
+	padding-top: 0px;
 }
-
+p.sm{
+	padding: 0;
+	margin: 0.2;
+	line-height: 1;
+}
+p span{
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #fff;
+	font-size: 23px;
+}
+p span a{
+	color #fff;
+}
 .height10 { height: 10px; }
 .height20 { height: 20px; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
 	font-family: 'Raleway', "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight: 400;
 }
 
-h1	{	font-size: 1.5em;
+h1	{	font-size: 28px;
 	color: #ffffff;
 	background: #343537;
 	padding: 10px 8px;
@@ -48,7 +63,16 @@ h1	{	font-size: 1.5em;
 h2	{ font-size: 24px; color: #333333; }
 
 .templatemo_reasonbg h2, .templatemo_blog h2 { color: #ffffff; }
-
+h4 {
+	color: #fff; 
+	padding-top: 20px; 
+	font-size: 30px; 
+}
+h4 span{
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #b2ccd3;	
+}
 img {
   	max-width: 100%;
   	height: auto;
@@ -67,17 +91,28 @@ img {
 .content img {
 	background-attachment:fixed;
 }
+.container {
+	background-color: transparent;
+	padding-left: 5%;
+	padding-right: 5f%;
+}
 .illustration_01 {
   background-image: url("../images/hello.png");
 }
 .about {
   background-position: center;
+  background-color: transparent;
 }
 .illustration_02 {
   background-image: url("../images/about.png");
 }
 .clear	{ clear: both;}
-
+.clear2 {
+	background: #ffffff;
+	box-shadow: 3px 3px 2px #bbb;
+	height: 5px;
+	margin-top: 30px;
+}
 .mWrapper {
   	width: 100%;
   	background-color: white;
@@ -88,7 +123,7 @@ img {
 	position: fixed;
 	z-index: 5000;
 	background: #ffffff;
-
+	box-shadow: 3px 3px 2px #bbb;
 	width: 100%;
 
 }
@@ -97,8 +132,10 @@ img {
 	position: relative;
 }
 .logo {
-	padding: 0 0 0 20px;
-	width: 280px;
+	padding-left: 15px;
+	padding-top: 0px;
+	width: 250px;
+	height: 20px;
 	position: fixed;
 }
 .mainMenu {
@@ -126,8 +163,14 @@ img {
 #top-menu ul { float: right;}
 #top-menu li {
     float: left;
-	line-height: 60px;
+	line-height: 25px;
 	display: inline-block;
+}
+.footer {
+	margin-bottom: 5%;
+}
+.footer p{
+	text-align: center;
 }
 
 #top-menu a {
@@ -135,7 +178,7 @@ img {
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     transition: 1s all ease;
-    color: #666;
+    color: #000;
     text-decoration: none;
 	font-size: 14px;
 }
@@ -147,8 +190,8 @@ img {
 
 #top-menu li.active a {
     color: #ffffff;
-	background: ##6CB1AA;
-	line-height: 60px;
+	background: #6CB1AA;
+	line-height: 25px;
 	font-size: 14px;
 }
 
@@ -173,41 +216,44 @@ img {
 	z-index: 10;
 	width: 60%;
 	font-size:20px;
+	background-color: transparent;
 }
 .templatemo_caption2 p { color: #ffffff; background: rgba(0, 0, 0, 0.32); padding: 10px; font-size: 18px; }
 
 .templatemo_caption2 {
-	margin-left: 12%;
+	margin-left: 20%;
 	text-align: left;
 	text-shadow: none;
-	margin-top: 15%;
+	margin-top: 8%;
 	position: absolute;
 	z-index: 10;
+	font-size:20px;
 	width: 60%;
 }
-.templatemo_caption2 h1	{	
-	font-size: 29px;
+.templatemo_caption2 h5{	
+	font-size: 19px;
+	color: red;
 }
 .templatemo_caption2 a{
-	color: #97e2db;
+	color: #b2ccd3;
 }
 .templatemo_caption3 p { color: #ffffff; background: rgba(0, 0, 0, 0.32); padding: 10px; font-size: 18px; }
 
 .templatemo_caption3 {
-	margin-left: 8%;
+	margin-left: 20%;
 	text-align: left;
 	text-shadow: none;
-	margin-top: 0;
+	margin-top: 5%;
 	position: absolute;
 	width: 55%;
 }
 .templatemo_caption4 p { color: #ffffff; background: rgba(0, 0, 0, 0.32); padding: 10px; font-size: 18px; }
 
 .templatemo_caption4 {
-	margin-left: 12%;
+	margin-left: 20%;
 	text-align: left;
 	text-shadow: none;
-	margin-top: 15%;
+	margin-top: 10%;
 	position: absolute;
 	z-index: 10;
 	width: 60%;
@@ -241,7 +287,11 @@ img {
 	padding: 20px 0px;
 
 }
+.templatemo_white {
+	background-color: #ffffff;
+	padding: 20px 0px;
 
+}
 .templatemo_paracenter { text-align: center; }
 
 .templatemo_about_box {
@@ -600,7 +650,7 @@ img {
 .templatemo_bottom	{ 
 	padding: 15px 0px; 
 	width: 100%; 
-	background: #333536;
+	background: transparent;
 	}
 .templatemo_bottom .left { float: left;}
 .templatemo_bottom .right { float: right;}
@@ -658,6 +708,121 @@ ul.footer_gallery li img { }
 ul.footer_gallery2 li { display: block; float: left; margin: 0 10px 10px 0 }
 ul.footer_gallery2 li img { }
 
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.paralax_container {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0px;
+}
+section.module h2 {
+  margin-bottom: 0px;
+}
+section.module p {
+  margin-bottom: 0px;
+}
+section.module p:last-child {
+  margin-bottom: 0px;
+}
+section.module.contents {
+  padding: 0px;
+  background-color: transparent;
+}
+section.module.parallax {
+  min-height: 1000px;
+  max-height: 2000px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left center;
+  z-index: 10;
+}
+/*section.module.parallax h1 {
+  color: red;
+  background-color: transparent;
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}*/
+section.module.parallax-1 {
+  background-image: url("../images/backgrounds/hello.png");
+}
+section.module.parallax-2 {
+  background-image: url("../images/backgrounds/about.png");
+}
+section.module.parallax-3 {
+  background-image: url("../images/backgrounds/portfolio.png");
+}
+/*portfolio*/
+section.module.parallax-4 {
+  background-image: url("../images/backgrounds/odd.png");
+}
+section.module.parallax-5 {
+  background-image: url("../images/backgrounds/mosaic.png");
+}
+section.module.parallax-6 {
+  background-image: url("../images/backgrounds/artemis.png");
+}
+section.module.parallax-7 {
+  background-image: url("../images/grey.png");
+}
+/*contact*/
+section.module.parallax-8 {
+  background-image: url("../images/backgrounds/contact.png");
+}
+/*LIGHTBOX-----------------------------*/
+/* line 22, ../sass/demo.scss */
+.container2 {
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 32, ../sass/demo.scss */
+.gallery a img {
+  float: left;
+  width: 20%;
+  height: auto;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative;
+}
+/* line 46, ../sass/demo.scss */
+ .gallery a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+}
+/* line 57, ../sass/demo.scss */
+.gallery a.big img {
+  width: 40%;
+}
+
+/* line 65, ../sass/demo.scss */
+.align-center {
+  text-align: center;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -671,7 +836,7 @@ and (max-width : 480px) {
 	#top-menu li a	{ padding: 0px;}
 	#top-menu li.active a {
     color: #ffffff;
-	background: #e9e9e9;
+	background: #6CB1AA;
 	font-size: 8px;
 	}
 	.templatemo_col12	{
@@ -743,7 +908,7 @@ and (max-width : 480px) {
 	}
 	#top-menu li.active a {
     color: #ffffff;
-	background: #e9e9e9;
+	background: #6CB1AA;
 	line-height: 40px;
 	}
 	

@@ -70,17 +70,67 @@ ddsmoothmenu2.init({
 })
 
 </script>
-  </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/simple-lightbox.js"></script>
+<script>
+  $(function(){
+    var $gallery = $('.gallery a').simpleLightbox();
+    
+    $gallery.on('show.simplelightbox', function(){
+      console.log('Requested for showing');
+    })
+    .on('shown.simplelightbox', function(){
+      console.log('Shown');
+    })
+    .on('close.simplelightbox', function(){
+      console.log('Requested for closing');
+    })
+    .on('closed.simplelightbox', function(){
+      console.log('Closed');
+    })
+    .on('change.simplelightbox', function(){
+      console.log('Requested for change');
+    })
+    .on('next.simplelightbox', function(){
+      console.log('Requested for next');
+    })
+    .on('prev.simplelightbox', function(){
+      console.log('Requested for prev');
+    })
+    .on('nextImageLoaded.simplelightbox', function(){
+      console.log('Next image loaded');
+    })
+    .on('prevImageLoaded.simplelightbox', function(){
+      console.log('Prev image loaded');
+    })
+    .on('changed.simplelightbox', function(){
+      console.log('Image changed');
+    })
+    .on('nextDone.simplelightbox', function(){
+      console.log('Image changed to next');
+    })
+    .on('prevDone.simplelightbox', function(){
+      console.log('Image changed to prev');
+    })
+    .on('error.simplelightbox', function(e){
+      console.log('No image found, go to the next/prev');
+      console.log(e);
+    });
+  });
+</script>
+
+</head>
   <body>
     <header>
     <!-- start menu -->
-    <div id="templatemo_home">
+    <!--<div id="templatemo_home">
     	<div class="templatemo_top">
       <div class="container templatemo_container">
         <div class="row">
           <div class="col-sm-3 col-md-3">
             <div class="logo">
-              <a href="#"><img src="images/bw-logo.png" alt="smoothy html5 template"></a>
+              <a href="#"><img src="images/logo.png" style="smoothy html5 template"></a>
             </div>
           </div>
           <div class="col-sm-9 col-md-9 templatemo_col9">
@@ -99,320 +149,262 @@ ddsmoothmenu2.init({
       </div>
     </div>
     </div>
-    <div class="clear"></div>
+    <div class="clear"></div>-->
     <!-- end menu -->
 
-        <div class="content hello"><img src="images/white.png" alt="slide 1" /></div>
-        
-             <div class="templatemo_caption">
-                    
-                    <div class="clear"></div>
-                    <h1>hi.</h1>
-                    <div class="clear"></div>
-             		   <p>>>>printf("%s/n", "hello world");
-                    <br>>>>print("hello world")
-                    <br>>>system.out.println("hello world");
-                    <br>>>console.log("hello world");</p>
-	          	   
-              </div>  
-              </div>
+    <!--home-->
+    <section class="module parallax parallax-1">
+      <div class="paralax_container"></div>
+    </section>
+    </div>
+    <section class = "module contents">
+      <div class="paralax_container">
+         <div class="templatemo_caption">
+          <div class="clear"></div>
+          <h1>hi.</h1>
+          <div class="clear"></div>
+          <p>>>>printf("%s/n", "hello world");
+          <br>>>>print("hello world")
+          <br>>>system.out.println("hello world");
+          <br>>>console.log("hello world");</p>
+        </div>  
+      </div>
+    </section>
   </header>
+  <!--home end-->
+  <!--about intro-->
   <!--About start-->
-  	<div class="templatemo_lightgrey_about" id="templatemo_about">
-    
-    </div>
-	<div class="container">
-    	<div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-        	<div class="item project-post">
-    </div>
-    </div>
-           
-  <div class="clear"></div>
+  <div id="templatemo_about"></div>
+  <section class="module parallax parallax-2" >
     <div class="templatemo_caption2">
-                    
-                    <div class="clear"></div>
-                    <h1>my name is joanna.</h1>
-                    <div class="clear"></div>
-             		<p>>>>I am a second year Computer Science student at Brown University
-                    <br> interested in user interface, graphics, web development, and 
-                    <br>human/computer interaction.
-                    <br><br>
-                    <class="selected"><a href="documents/Simwinga_Resume.pdf" target="_blank">>>>Resume</a></p>
-
-    </div> 
-    <div class="templatemo_reasonbg">
-    	<div class="content about"><img src="images/white.png" alt="slide 1" />
-	
-                      
-        </div>
+      <h1>my name is joanna.</h1>
+      <div class="clear"></div>
+		    <p>>>>I am a Python enthusiast and full stack developer. I'm a senior studying Computer Science at Brown University, interested in user interfaces, data structure, web development, human/computer interaction and using tech for social good.
+      <br></br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><class="selected"><a href="documents/simwinga_joanna_resume.pdf" target="_blank">Resume</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span><a href="https://www.linkedin.com/in/joanna-simwinga-360431100" target="_blank">LinkedIn</a></span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span><a href="https://github.com/josimwinga" target="_blank">GitHub</a></span></p>
     </div>
-    <div class="clear"></div>
-    </div>
+  </section>
     
+
+  <section class="module parallax parallax-3">
+    <div class="paralax_container">
+     
     <!--Our Portfolio Start-->
     <!--Obj 1-->
-    <div class="templatemo_portfolio" id="templatemo_portfolio">
+    <br><br>
+    <section class = "module contents">
+      <div class="paralax_container">
+        <div id="templatemo_portfolio"></div>
+        <div class="templatemo_portfolio"></div>
+          <div class="templatemo_caption3">
+            </br></br> </br></br>           
+              <div class="clear"></div>
+              <h1>this is my work.</h1>
+              <div class="clear"></div>
+              <p>>>>Check out some of the projects that I have been working on.</p>        
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <section class="module parallax parallax-4">
+    <section class = "module contents">
+    <div class="paralax_container">
+    <div class="clear"></div>  
+    <div class="clear"></div>  
+  <!--Open Data Durban-->
+  </br></br> </br></br>  
+    <div class="container" style="padding-top: 5%;">
+     <h4><span>Open Data Durban</span></h4> 
+      <div class="col-xs-12 col-sm-6 col-md-8 templatemo_col12">
+        <h2>The Organization</h2>
+        <p>Open Data Durban (ODD) is a non-profit civic technology lab in Durban, South Africa that works to drive civic engagement in eThekwini. They advocate for open data and open government within the eThekwini Municipality and develop data-driven civic technology tools and solutions. ODD aims to create positive social change which helps transform Durban into a more inclusive, productive, and happy city that is better governed.</p>
+        <p>While studying in Durban during the Spring of 2017, I interned at Open Data Durban while researching the the utilization of tehnology to create positive social change. While at ODD, I created a widget that provided community members with government information about medicine prices, redesigned the ODD suite of widgets, and built a website for the Ask Durban campaign.</p>
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 templatemo_col12">
+        <div class="gallery"> 
+          <img src="images/portfolio/ask_durban2.png" alt="" width="50%" title="Ask Durban" />   
+        </div>
+        </div>
+      
+      <div class="clear"></div>
+
+      <div class="col-xs-6 col-sm-6 col-md-4 templatemo_col12">
+        <h2>My Roles</h2>
+        <p class ="sm">Softare Engineering Intern</p>
+      </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-4 templatemo_col12">
+        <h2>Technology Used</h2>
+          <ul>   
+            <li>Python and Flask</li> 
+            <li>Heroku</li> 
+            <li>HTML/CSS/SCSS</li>    
+          </ul>
+        <div class="clear"></div>  
+      </div>
+      
+       
+      <div class="col-xs-6 col-sm-6 col-md-4 templatemo_col12">
+        <h2>Links to my work</h2>
+        <ul>   
+          <li><a href = "http://ask.answers.durban/" target= "_blank">Ask Durban Website</a></li> 
+          <li><a href = "http://widgets.opendata.durban/medicine_prices" target= "_blank">Medicine Prices Widget</a></li> 
+          <li><a href = "http://widgets.opendata.durban/" target= "_blank">ODD Widgets</a></li>  
+          <li><a href = "https://github.com/opendatadurban/multi-app" target= "_blank">ODD Widgets Github Repo</a></li>    
+          <li><a href= "documents/ODD_Final_Report.pdf" target= "_blank">Final Report</a></li>
+        </ul>
+        <div class="clear"></div>  
+      </div>
+    </div>
+
     </br>
-  </br>
-</br>
-</br>
+  </div>
+</section>
+</section>
 </div>
-    <!--<img src="images/PORT.png" alt="slide 1" />-->
-        	<div class="templatemo_caption3">
-          </br></br>
-                    
-                    <div class="clear"></div>
-                    <h1>this is my work.</h1>
-                    <div class="clear"></div>
-                    <p>>>>Check out a few projects that I have been working on.</p>
-                 
-          </div>
-           </br></br>
-            </br></br></br></br></br></br></br></br></br>
+  
+  <!--MOSAIC-->   
+ <section class="module parallax parallax-5">
+    <div class="paralax_container">
+      </br></br> </br></br>  
+    <div class="container">
+      </br></br></br>
+      <h4><span>MOSAIC+</span></h4>    
+        
+      <div class="col-xs-12 col-sm-6 col-md-8 templatemo_col12">
+        <h2>The organization</h2>
+        <p>Mosaic+ is a student-run organization which advocates for diversity in computer science. We strive towards an academic environment receptive to underrepresented minority students and faculty at Brown University. We are a group of committed and creative students working together to make proactive steps towards the celebration of diversity in the world of technology.</p>
+        <p>I am a founding member of the organization and served as the Branding Team Co-Chair for the past 2 years. As the Branding Team Co-Chair, I designed and developed the organization's website and blog.</p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 templatemo_col12">
+        <img src="images/portfolio/Mosaic.png" alt="">
+      </div>
+
+      <div class = "clear"></div>
+
+      <div class="col-xs-6 col-sm-6 col-md-4 templatemo_col12">
+        <h2>My Roles</h2>
+        <ul>
+          <li>Branding Team Co-Chair</li>
+          <li>Social Media Director</li>
+          <li>Transition Program Coordinator</li>
+        </ul>
+        </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-4 templatemo_col12">
+        <h2>Technology Used</h2>
+        <ul>   
+          <li>HTML/CSS/SCSS</li>    
+        </ul>
+        <div class="clear"></div>  
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-4 templatemo_col12">
+        <h2>Links to my work</h2>
+        <ul>
+          <li><a href = "https://mosaic-plus-brown.github.io/mosaic/" target= "_blank">Mosaic+ Website</a></li>
+          <li><a href = "http://mosaic-plus-blog.tumblr.com" target= "_blank">Mosaic+ Blog</a></li>
+          <li><a href= "https://www.facebook.com/brownmosaicplus/" target= "_blank">Mosaic+ Facebook</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    </br>
+  </div>
+</section>
+
+  
+
+  <!-- end ARTEMIS--> 
   <!--ARTEMIS-->   
-      <div class="container">
-          <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-              <h2>The Artemis Project</h2>
-                <p>The Artemis Project is a 5 week summer program for rising 9th grade girls in the Providence area run by the Brown University CS Department. Each year, undergraduate women in the department coordinate the program.</p>
-                  <p>This past summer, I was one of the 4 coordinators that coordinated every aspect of the program from the program direction to curriculum to snack orders. This year, we redesigned the entire program, intensifying the focus on Python programming an and an entreprenueral aspect.</p>
-          </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-              <h2>My Roles</h2>
-                <ul>
-                  <li>Developed and taught Python curriculum</li>
-                  <li>Developed a graphics library based upon the zellegraphics library for beginning programmers. </li>
-                  <li>Redesigned the programs website in the spring, completly rebuilt the website in the summer.</li>
-                  <li>Led confilct/resolution and leadership training sessions with the other coordinators. </li>
-                  <li>Headed the TA program. </li>
-                </ul>
-                <h2>Links to my work</h2>
-              
-                <ul>
-                  <li><a href = "http://cs.brown.edu/people/orgs/artemis/2015/index.html" target= "_blank">Artemis Project Website Final</li>
-                  <li><a href = "http://cs.brown.edu/people/orgs/artemis/old/2014.5/" target= "_blank">Artemis Project Website v1</li>
-                  <li><a href= "documents/ArtemisGraphics.pdf" target= "_blank">Artemis Graphics pdf</li>
-                  <li><a href= "documents/ArtemisGraphics.py" target= "_blank">Artemis Graphics File</li>
-                </ul>
+   <section class="module parallax parallax-6">
+    <div class="paralax_container">
+      </br></br> </br></br>  
+    <div class="container">
+      <h4><span>THE ARTEMIS PROJECT</span></h4>  
+      <div class="col-xs-12 col-sm-6 col-md-8 templatemo_col12">
+        <h2>The Program</h2>
+        <p>The Artemis Project is a 5 week summer program for rising 9th grade girls in the Providence area run by the Brown University CS Department. Each year, undergraduate women in the department coordinate the program.</p>
+        <p>As one of the found undergraduate coordinators, I helped to redesign the structure of the program, intensifying the focus on Python programming and adding an entreprenueral aspect.</p>
+      </div>
+    
+      <div class="col-xs-12 col-sm-6 col-md-4 templatemo_col12">
+        <img src="images/portfolio/A1.png" alt="">
+      </div>
+      
+      <div class="clear"></div>
+      
+      <div class="col-xs-6 col-sm-6 col-md-6 templatemo_col12">
+        <h2>My Roles</h2>
+        <ul>
+          <li>Developed and taught Python curriculum</li>
+          <li>Developed a graphics library based upon the zellegraphics library for beginning programmers. </li>
+          <li>Redesigned the programs website in the spring, buit a new website in the summer.</li>
+          <li>Led confilct/resolution and leadership training sessions with the other coordinators. </li>
+          <li>Headed the TA program. </li>
+        </ul>
+      </div>
+        
+      <div class="col-xs-6 col-sm-6 col-md-6 templatemo_col12">
+        <h2>Links to my work</h2>
+        <ul>
+          <li><a href = "http://cs.brown.edu/people/orgs/artemis/old/2015/" target= "_blank">Artemis Project Website</a></li>
+      
+          <li><a href= "documents/ArtemisGraphics.pdf" target= "_blank">Artemis Graphics pdf</a></li>
+          <li><a href= "documents/ArtemisGraphics.py" target= "_blank">Artemis Graphics File</a></li>
+        </ul>
 
-                <div class="clear"></div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 templatemo_col12">
-              <h2>Project Images</h2>
-            
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="images/portfolio/A1.png" alt="Chania">
-            </div>
 
-            <div class="item">
-              <img src="images/portfolio/A2.png" alt="Chania">
-            </div>
-
-            <div class="item">
-              <img src="images/portfolio/A4.png" alt="Flower">
-            </div>
-
-          </div>
-                <div class="clear"></div>
-            </div>
-        </div>
+      </div>
+      
     </div>
-  </br>
+
+
   <!-- end ARTEMIS-->
-  <!--SUO-->
-  <div class="templatemo_lightgrey">
-      <div class="container">
-          <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-              <h2>Mood Aesthetics</h2>
-                <p>Mood Aesthetics is a simple interactive audio visualizer
-centered around four human emotional states: anger, sadness, happiness and tranquility. It aims
-to enhance the user’s current mood by pairing graphic animations and sonic melodies to the
-mood chosen by the user. The music and graphic animations were carefully chosen and designed
-to elicit a particular reaction from the user. The Angry function, for example, augments to the
-user’s rage by making use of loud music, bright red colors, and edgy shapes flashing across the
-screen. This function also features an interactive component wherein the user clicks the mouse
-rapidly and the color of the screen consequently turns into a brighter shade of red. </p>
-          </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-              <h2>My Roles</h2>
-                <ul>
-                  <li>Poject Developer with a focus on graphics</li>
-                </ul>
-                <h2>Project Documents</h2>
-                <ul>       
-                  <li><a href = "documents/FullProject.pdf" target= "_blank">Poject Description</li>
-                  <li><a href= "documents/MA_Final_Report.pdf" target= "_blank">Final Report</li>
-                  <li><a href= "documents/Abstract.pdf" target= "_blank">Abstract</a></li>
-                </ul>
-                <div class="clear"></div>
-              
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 templatemo_col12">
-              <h2>Project Images</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="images/portfolio/MA1.png" alt="Chania">
-            </div>
+</div>
+</section>
 
-            <div class="item">
-              <img src="images/portfolio/MA2.png" alt="Chania">
-            </div>
-
-            <div class="item">
-              <img src="images/portfolio/MA3.png" alt="Flower">
-            </div>
-            <div class="item">
-              <img src="images/portfolio/MA5.png" alt="Flower">
-            </div>
-
-          </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
-  </br>
-
-        <!-- end 2nd obj-->
-
-    </div>
-    <!-- SUO-->
-
-      <div class="container">
-          <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-              <h2>SUO</h2>
-                <p>SUO was an online Etsy shop that specialized in custom denim apparel and vintage, thrifted apparel. In our two years of operation, we had customers on 5 continents and were promoted by 2 award winning fashion bloggers and 1 successful fashion YouTube channel.</p>
-          </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-              <h2>My Roles</h2>
-                <ul>
-                  <li>Co-Founder</li>
-                  <li>Website Development</li>
-                  <li>Customer Relations</li>
-                  <li>Social Media Manager</li>
-                  <li>Finance Manager</li>
-                </ul>
-                 <h2>SUO Links</h2>
-                <ul>
-                  <li><a href = "http://silverunderwearoutfitters.tumblr.com/" target= "_blank">Website</li>
-                  <li><a href = "http://blog-suo.tumblr.com/" target= "_blank">Blog</li>
-                  <li><a href= "https://www.etsy.com/shop/silverunderwear?ref=si_shop" target= "_blank">Etsy</li>
-                  <li><a href= "http://www.trendhunter.com/trends/american-flag-shorts#!/photos/150053/1" target= "_blank">Trend Hunter Article</a></li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 templatemo_col12">
-              <h2>Project Images</h2>
-                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="images/portfolio/s1.png" alt="Chania">
-            </div>
-
-            <div class="item">
-              <img src="images/portfolio/s2.png" alt="Chania">
-            </div>
-
-            <div class="item">
-              <img src="images/portfolio/s3.png" alt="Flower">
-            </div>
-            <div class="item">
-              <img src="images/portfolio/s4.png" alt="Flower">
-            </div>
-            <div class="item">
-            <img src="images/portfolio/s5.png" alt="Flower">
-            </div>
-          </div>
-          </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-          </div>
-        </div>
-    </div>
-  </br></br></br></br></br>   	
-            
-
-    </div>
-    <!--Our Portfolio End-->
+<!--Our Portfolio End-->
 
     <!--Contact Start -->
-    <div class="templatemo_lightgrey" id="templatemo_contact">
-    	<div class="templatemo_paracenter">
-    	</div>
-        <div class="clear"></div>
-        <div class="container">
-          <div class="clear"></div>
-    <div class="templatemo_caption2">
-                    
-                    <div class="clear"></div>
-                    <h1>contact me.</h1>
-                    <div class="clear"></div>
-                <p>>>>You can contact me at joanna_simwinga[at]brown.edu
-                    <br> >>>shoot me an email!
-                    <br><br>
+  <div id="templatemo_contact"></div>
+  <section class="module parallax parallax-8">
+    <div class="paralax_container">
+      <br> <br> <br> <br> <br>  
+      <div class="templatemo_caption4">
 
+      <div class="clear"></div>
+      <h1>contact me.</h1>
+      <div class="clear"></div>
+      <p>>>>You can contact me at joanna_simwinga[at]brown.edu
+      <br> >>>shoot me an email!
+      <br><br>
     </div> 
-    <div class="templatemo_reasonbg">
-      <div class="content about"><img src="images/white.png" alt="slide 1" />
+    </div>
+  </section>
+
   
-                      
-        </div>
-    </div>
-        	
-         
-        </div>
-
-  </div>
+	<div class="container">
+    	<div class="row" style="text-align: center; padding-top: 10px">
     
-    <!--Contact End-->
-    <!--Footer Start-->
+      	<p>Joanna Simwinga</p>
+        <a href="https://www.linkedin.com/in/joanna-simwinga-360431100"><div class="fa fa-linkedin soc"></div></a>
+        &nbsp 
+        <a href="https://github.com/josimwinga"><div class="fa fa-github soc"></div></a>
 
-   <!--Footer End-->
-	<!-- Bottom Start -->
-    <div class="templatemo_bottom">
-    	<div class="container">
-        	<div class="row">
-            	<div class="left">
-                	<span>Copyright © 2015 Joanna Simwinga</span>
-                </div>
-                <!--
-                <div class="right">
-                	<a href="#"><div class="fa fa-rss soc"></div></a>
-                    <a href="#"><div class="fa fa-twitter soc"></div></a>
-                    <a href="#"><div class="fa fa-linkedin soc"></div></a>
-                    <a href="#"><div class="fa fa-dribbble soc"></div></a>
-                    <a href="#"><div class="fa fa-facebook soc"></div></a>
-                </div>-->
-            </div>
-        </div>
+</div>
     </div>
+
     <!-- Bottom End -->
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
